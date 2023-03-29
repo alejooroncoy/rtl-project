@@ -1,0 +1,15 @@
+@import "modules/mixins";
+
+:root {
+  scroll-behavior: smooth;
+}
+
+.body {
+  font-family: "Nunito Sans", sans-serif;
+  overflow: hidden;
+}
+
+#root {
+  min-height: 100vh;
+  @include flex-fd-jc-ai-g(column);
+}

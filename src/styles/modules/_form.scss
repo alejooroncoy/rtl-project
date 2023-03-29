@@ -1,0 +1,57 @@
+.form {
+  @include flex-fd-jc-ai-g(row, flex-end, flex-start, 1rem);
+  flex-wrap: wrap;
+  &__input {
+    &-container {
+      flex: 100%;
+      @include flex-fd-jc-ai-g(row, center, center, 0.5rem);
+      overflow: hidden;
+      border-radius: 0.313rem;
+      box-shadow: 0 0 0 0.0625rem rgba(145, 158, 171, 0.32);
+      padding: 0.25rem 1rem;
+      transition: box-shadow 0.25s;
+      &:has(> .form__input:focus) {
+        box-shadow: 0 0 0 0.0625rem #ff9f43;
+      }
+    }
+    flex: 1;
+    border: none;
+    padding: 0.25rem 0;
+    text-align: end;
+    outline: none;
+  }
+  &__label {
+    text-align: end;
+  }
+  &__message {
+    font-weight: 400;
+    color: #212b36;
+    font-size: 0.875rem;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    &__link {
+      text-decoration: none;
+      color: #212b36;
+      font-weight: 600;
+      position: relative;
+      transition: color 0.25s;
+      &::after {
+        content: "";
+        background: #ff9f43;
+        position: absolute;
+        left: 0;
+        bottom: -0.1rem;
+        right: 100%;
+        height: calc(0.0625rem * 2);
+        transition: right 0.25s;
+      }
+      &:hover {
+        color: #ff9f43;
+        &::after {
+          right: 0;
+        }
+      }
+    }
+  }
+}
