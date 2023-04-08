@@ -53,4 +53,20 @@
       }
     }
   }
+  &--menu-icon {
+    padding: revert;
+    @include laptop {
+      display: none;
+    }
+  }
+  &--profile {
+    display: grid;
+    grid-template-columns: 8rem 2.5rem;
+    grid-template-rows: repeat(2, calc(2.5rem / 2));
+    grid-template-areas:
+      "title avatar"
+      "subtitle avatar";
+    align-items: flex-end;
+    gap: 0rem 0.5rem;
+  }
 }

@@ -13,11 +13,22 @@
       &:has(> .form__input:focus) {
         box-shadow: 0 0 0 0.0625rem #ff9f43;
       }
+      &--header {
+        margin-right: 1rem;
+        color: #67748e;
+        background-color: #f6f6f7;
+        border-radius: 3.125rem;
+        box-shadow: 0 0 0 0.0625rem rgba(145, 158, 171, 0);
+        &:has(> .form__input:focus) {
+          box-shadow: 0 0 0 0.0625rem rgba(145, 158, 171, 0);
+        }
+      }
     }
     flex: 1;
     border: none;
     padding: 0.25rem 0;
     text-align: end;
+    background: transparent;
     outline: none;
   }
   &__label {
@@ -52,6 +63,12 @@
           right: 0;
         }
       }
+    }
+  }
+  &--header {
+    display: none;
+    @include laptop {
+      display: flex;
     }
   }
 }

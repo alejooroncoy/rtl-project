@@ -1,0 +1,23 @@
+.purchase-sales {
+  flex: 2.5;
+  background-color: #fff;
+  border-radius: 0.375rem;
+  box-shadow: 0 0 0 0.0625rem #e8ebed;
+  padding: 1rem;
+  &-container {
+    @include flex-fd-jc-ai-g(column, center, flex-end, 1.25rem);
+    height: 100%;
+  }
+  &__title {
+    margin: 0;
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: #212b36;
+  }
+  &__char {
+    position: relative;
+    width: 95%;
+    height: 20rem;
+    margin: auto;
+  }
+}

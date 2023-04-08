@@ -1,0 +1,12 @@
+.amounts {
+  padding: 0;
+  flex: 100%;
+  &-container {
+    @include flex-fd-jc-ai-g(column-reverse, center, center, 1.563rem);
+    width: 100%;
+    flex-wrap: wrap;
+    @include tablet {
+      flex-direction: row;
+    }
+  }
+}

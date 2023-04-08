@@ -2,7 +2,7 @@ import { MdOutlineEmail, MdPerson } from "react-icons/md";
 import Helmet from "react-helmet";
 import { BsEyeFill, BsFacebook } from "react-icons/bs";
 import AuthForm from "../../components/Auth/Auth/AuthForm";
-import Logo from "../../assets/logo.png";
+import Logo from "../../assets/img/logo.png";
 import { Link } from "react-router-dom";
 import { FcGoogle } from "react-icons/fc";
 import fromFormDataToJson from "../../utils/fromFormDataToJson";

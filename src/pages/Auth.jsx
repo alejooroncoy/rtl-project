@@ -1,6 +1,6 @@
 import { AnimatePresence, motion } from "framer-motion";
 import { useLocation } from "react-router-dom";
-import ImageAsideAuth from "../assets/auth.jpg";
+import ImageAsideAuth from "../assets/img/auth.jpg";
 import AnimatedOutlet from "../components/shared/AnimatedOutlet";
 
 const Auth = () => {

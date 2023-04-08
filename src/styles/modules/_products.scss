@@ -1,0 +1,23 @@
+.products-section {
+  flex: 100%;
+  padding: 1rem 1rem 1rem 1rem;
+  background-color: #fff;
+  border-radius: 0.375rem;
+  box-shadow: 0 0 0 0.0625rem #e8ebed;
+  &-container {
+    @include flex-fd-jc-ai-g(column, center, flex-end, 1.25rem);
+  }
+  &__title {
+    margin: 0;
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: #212b36;
+  }
+  @include laptop {
+    padding: 1rem;
+    flex: 1;
+  }
+  &--expired {
+    flex: 100%;
+  }
+}
